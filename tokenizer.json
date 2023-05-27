@@ -5,55 +5,56 @@
   "added_tokens": [
     {
       "id": 0,
-      "special": true,
       "content": "<s>",
       "single_word": false,
       "lstrip": false,
       "rstrip": false,
-      "normalized": true
+      "normalized": true,
+      "special": true
     },
     {
       "id": 1,
-      "special": true,
       "content": "<pad>",
       "single_word": false,
       "lstrip": false,
       "rstrip": false,
-      "normalized": true
+      "normalized": true,
+      "special": true
     },
     {
       "id": 2,
-      "special": true,
       "content": "</s>",
       "single_word": false,
       "lstrip": false,
       "rstrip": false,
-      "normalized": true
+      "normalized": true,
+      "special": true
     },
     {
       "id": 3,
-      "special": true,
       "content": "<unk>",
       "single_word": false,
       "lstrip": false,
       "rstrip": false,
-      "normalized": true
+      "normalized": true,
+      "special": true
     },
     {
       "id": 50264,
-      "special": true,
       "content": "<mask>",
       "single_word": false,
       "lstrip": true,
       "rstrip": false,
-      "normalized": true
+      "normalized": true,
+      "special": true
     }
   ],
   "normalizer": null,
   "pre_tokenizer": {
     "type": "ByteLevel",
     "add_prefix_space": false,
-    "trim_offsets": true
+    "trim_offsets": true,
+    "use_regex": true
   },
   "post_processor": {
     "type": "RobertaProcessing",
@@ -71,7 +72,8 @@
   "decoder": {
     "type": "ByteLevel",
     "add_prefix_space": true,
-    "trim_offsets": true
+    "trim_offsets": true,
+    "use_regex": true
   },
   "model": {
     "type": "BPE",
@@ -80,6 +82,7 @@
     "continuing_subword_prefix": "",
     "end_of_word_suffix": "",
     "fuse_unk": false,
+    "byte_fallback": false,
     "vocab": {
       "<s>": 0,
       "<pad>": 1,

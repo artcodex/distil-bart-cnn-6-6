@@ -8,6 +8,7 @@
     "rstrip": false,
     "single_word": false
   },
+  "clean_up_tokenization_spaces": true,
   "cls_token": {
     "__type": "AddedToken",
     "content": "<s>",
@@ -34,7 +35,6 @@
     "single_word": false
   },
   "model_max_length": 1024,
-  "name_or_path": "sshleifer/distilbart-cnn-6-6",
   "pad_token": {
     "__type": "AddedToken",
     "content": "<pad>",
@@ -51,7 +51,6 @@
     "rstrip": false,
     "single_word": false
   },
-  "special_tokens_map_file": null,
   "tokenizer_class": "BartTokenizer",
   "trim_offsets": true,
   "unk_token": {
