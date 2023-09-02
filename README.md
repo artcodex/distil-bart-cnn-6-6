@@ -1,6 +1,5 @@
 ---
-library_name: transformers.js
-pipeline_tag: summarization
+library_name: "transformers.js"
 ---
 
 https://huggingface.co/sshleifer/distilbart-cnn-6-6 with ONNX weights to be compatible with Transformers.js.
