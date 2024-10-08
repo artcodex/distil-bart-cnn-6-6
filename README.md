@@ -1,7 +1,8 @@
 ---
+base_model: sshleifer/distilbart-cnn-6-6
 library_name: transformers.js
-pipeline_tag: summarization
 license: apache-2.0
+pipeline_tag: summarization
 ---
 
 https://huggingface.co/sshleifer/distilbart-cnn-6-6 with ONNX weights to be compatible with Transformers.js.
